@@ -69,9 +69,9 @@ export default function Home() {
           {productsData.map((product) => (
             <ProductCard
               key={product.id}
-              productLink={product.productLink}
-              defaultImage={product.defaultImage}
-              hoverImage={product.hoverImage}
+              productLink={product?.productLink}
+              defaultImage={product?.defaultImage}
+              hoverImage={product?.hoverImage}
               title={product.title}
               price={product.price}
               badgeColor={product.badgeColor}

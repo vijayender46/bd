@@ -85,7 +85,7 @@ export default function Home() {
         <ColorSwatch />
       </section>
 
-      <section className="md:container md:flex mx-auto">
+      <section className="md:container md:flex mx-auto mb-20">
         <div className="flex flex-1 items-end bg-cover bg-center bg-no-repeat text-center" 
           style={{ 
             backgroundImage: `url(${BD_selfcare})` 

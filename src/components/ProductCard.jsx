@@ -24,7 +24,7 @@ const ProductCard = ({
           </div>
 
           {/* The hover image */}
-          <div className="hover_img absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-450">
+          <div className="hover_img absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500">
             <img src={hoverImage} alt={`${title} Hover`} />
           </div>
         </div>
@@ -32,7 +32,7 @@ const ProductCard = ({
         <div className="product_card_info inline-block">
           <Title titleText={title} titleCss={`text-xl md:text-2xl leading-7 ${titleCss}`} />
           <h4 className="font-medium md:text-xl text-lg text-gray">{price}</h4>
-          <span className={`inline-block w-[18px] h-[18px] rounded-full mt-2 ${badgeCss} duration-450`} style={{ backgroundColor: badgeColor }}></span>
+          <span className={`inline-block w-[18px] h-[18px] scale-1 hover:scale-110 rounded-full mt-2 ${badgeCss} duration-500`} style={{ backgroundColor: badgeColor }}></span>
         </div>
       </Link>
     </div>

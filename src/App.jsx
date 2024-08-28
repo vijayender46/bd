@@ -7,6 +7,7 @@ import News from "./pages/News";
 import Contact from "./pages/Contact";
 import Header from './components/Header';
 import PageNotFound from './pages/PageNotFound'
+import Footer from './components/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="*" element={<PageNotFound />}  />
              
       </Routes>
+      <Footer />
     </>
   )
 }

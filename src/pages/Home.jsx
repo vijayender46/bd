@@ -8,10 +8,95 @@ import Title from "../components/Title";
 import BD_Bogle_Hero from '../assets/BD_Bogle_Hero.png'
 import BD_selfcare from '../assets/bd_selfcare.png'
 import BD_selfcare_boggles from '../assets/bd_slfcare_boggles.png'
-import { productsData } from "../constants";
+// import { productsData } from "../constants";
 import ProductCard from "../components/ProductCard";
 import ColorSwatch from "../components/ColorSwatch";
 import Button from "../components/Button";
+
+// product images
+import bd_boggles_blue from '../assets/bd_boggles_blue.png';
+import bd_boggles_blue_hover from '../assets/bd_boggles_blue_hover.png';
+import bd_boggles_clear from '../assets/bd_boggles_clear.png';
+import bd_boggles_clear_hover from '../assets/bd_boggles_clear_hover.png';
+import bd_boggles_purple from '../assets/bd_boggles_purple.png';
+import bd_boggles_purple_hover from '../assets/bd_boggles_purple_hover.png';
+import bd_boggles_pink from '../assets/bd_boggles_pink.png';
+import bd_boggles_pink_hover from '../assets/bd_boggles_pink_hover.png';
+import bd_boggles_black from '../assets/bd_boggles_black.png';
+import bd_boggles_black_hover from '../assets/bd_boggles_black_hover.png';
+import bd_boggles_aqua from '../assets/bd_boggles_aqua.png';
+import bd_boggles_aqua_hover from '../assets/bd_boggles_aqua_hover.png';
+import bd_boggles_grey from '../assets/bd_boggles_grey.png';
+import bd_boggles_grey_hover from '../assets/bd_boggles_grey_hover.png';
+
+
+
+const productsData = [
+  {
+    id: 1,
+    productLink: '/product/1',
+    defaultImage: bd_boggles_blue,
+    hoverImage: bd_boggles_blue_hover,
+    title: 'BD Boggle Blue',
+    price: 'from £1000.00',
+    badgeColor: '#4D92AD',
+  },
+  {
+    id: 2,
+    productLink: '/product/2',
+    defaultImage: bd_boggles_clear,
+    hoverImage: bd_boggles_clear_hover,
+    title: 'BD Boggle Clear',
+    price: 'from £1000.00',
+    badgeColor: '#ccc',
+  },
+  {
+    id: 3,
+    productLink: '/product/3',
+    defaultImage: bd_boggles_purple,
+    hoverImage: bd_boggles_purple_hover,
+    title: 'BD Boggle Purple',
+    price: 'from £1000.00',
+    badgeColor: '#9B8FAB',
+  },
+  {
+    id: 4,
+    productLink: '/product/4',
+    defaultImage: bd_boggles_pink,
+    hoverImage: bd_boggles_pink_hover,
+    title: 'BD Boggle Pink',
+    price: 'from £1000.00',
+    badgeColor: '#E8C6CB',
+  },
+  {
+    id: 5,
+    productLink: '/product/5',
+    defaultImage: bd_boggles_black,
+    hoverImage: bd_boggles_black_hover,
+    title: 'BD Boggle Black',
+    price: 'from £1000.00',
+    badgeColor: '#414442',
+  },
+  {
+    id: 6,
+    productLink: '/product/6',
+    defaultImage: bd_boggles_aqua,
+    hoverImage: bd_boggles_aqua_hover,
+    title: 'BD Boggle Aqua Blue',
+    price: 'from £1000.00',
+    badgeColor: '#78AF9E',
+  },
+  {
+    id: 7,
+    productLink: '/product/7',
+    defaultImage: bd_boggles_grey,
+    hoverImage: bd_boggles_grey_hover,
+    title: 'BD Boggle Grey',
+    price: 'from £1000.00',
+    badgeColor: '#868686',
+  },
+  // Add more products as needed...
+];
 
 
 export default function Home() {

@@ -1,7 +1,24 @@
 import { useState } from 'react';
-import { caseColors } from '../constants';
+// import { caseColors } from '../constants';
 import Title from './Title';
 import Button from './Button';
+import bd_case_pink from '../assets/bd_case_pink.png';
+import bd_case_black from '../assets/bd_case_black.png';
+import bd_case_blue from '../assets/bd_case_blue.png';
+import bd_case_aqua from '../assets/bd_case_aqua.png';
+import bd_case_clear from '../assets/bd_case_clear.png';
+import bd_case_purple from '../assets/bd_case_purple.png';
+
+
+const caseColors = [
+  { color: '#E8C6CB', image: bd_case_pink },
+  { color: '#111111', image: bd_case_black },
+  { color: '#4D92AD', image: bd_case_blue },
+  { color: '#868686', image: bd_case_black },
+  { color: '#78AF9E', image: bd_case_aqua },
+  { color: '#cccccc', image: bd_case_clear },
+  { color: '#9B8FAB', image: bd_case_purple },
+];
 
 const ColorSwatch = () => {
   const [selectedImage, setSelectedImage] = useState(caseColors[0].image);

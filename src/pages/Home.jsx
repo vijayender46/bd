@@ -113,7 +113,7 @@ export default function Home() {
 
           {/* Text Section */}
           <TextSection
-            widthCss="flex justify-items-center items-center box-border p-[30px] sm:p-0 sm:py-10"
+            widthCss="flex justify-items-center items-center box-border text-center md:text-left p-[30px] sm:p-0 sm:py-10"
             titleFont="md:text-5xl text-3xl font-medium" 
             subTitleFont="md:text-2xl text-xl font-medium text-gray my-2 md:my-4  md:pr-[80px] tracking-wide"
             title="BD Boggles."

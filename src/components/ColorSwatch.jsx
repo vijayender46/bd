@@ -38,12 +38,12 @@ const ColorSwatch = () => {
       </div>
 
       {/* Left Side: Color Swatches */}
-      <div className="md:flex-1 block md:pl-4">
-        <div className='bd_boggle_cases lg:pl-6'>
+      <div className="md:flex-1 block md:pl-4 text-center md:text-left">
+        <div className='bd_boggle_cases lg:pl-6 '>
             <Title titleCss='md:text-5xl text-3xl leading-10 font-medium text-dark' titleText='Shop by accessories.' />
             <h3 className='text-2xl font-medium text-dark max-w-md leading-8 mt-6 md:mt-10'>
                 Clear stylish protective cases for your boggles and our ultra soft microfibre cleaning cloth to keep everything looking shiny and new.</h3>
-            <div className='flex gap-4 mt-4'>
+            <div className='flex gap-4 mt-4 justify-center md:justify-start'>
             {caseColors.map((color, index) => (
                 <div
                     key={index}
@@ -54,7 +54,7 @@ const ColorSwatch = () => {
                 ))}
             </div>
         </div>
-        <Button buttonClass="md:ml-8 mt-6 mb-14 md:mb-2 text-light bg-dark hover:bg-blue" buttonText='Shop accessories' />
+        <Button buttonClass="lg:ml-8 mt-6 mb-16 lg:mb-2 text-light bg-dark hover:bg-blue" buttonText='Shop accessories' />
       </div>
     </div>
   );

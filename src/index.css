@@ -93,4 +93,7 @@
     height: 30px;
     width: 30px;
   }
+  .carousel-container .react-multi-carousel-item:first-child {
+    margin-left:inherit;
+  }
 }

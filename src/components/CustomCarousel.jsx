@@ -5,21 +5,22 @@ import "react-multi-carousel/lib/styles.css";
 const defaultResponsive = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 5,
+    slidesToSlide: 2, // optional, default to 1.
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 3, // optional, default to 1.
+    items: 4.5,
+    slidesToSlide: 1, // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 3,
-    slidesToSlide: 2, // optional, default to 1.
+    items: 3.5,
+    slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 2,
+    items: 2.5,
     slidesToSlide: 1, // optional, default to 1.
   },
 };
@@ -40,7 +41,7 @@ const CustomCarousel = ({
   containerClass = "carousel-container",
   removeArrowOnDeviceType = ["desktop" ,"tablet", "mobile"],
   dotListClass = "custom-dot-list-style",
-  itemClass = "carousel-item-padding-40-px",
+  itemClass = "carousel-item-padding-40-px cursor-grab",
   deviceType,
 }) => {
   return (

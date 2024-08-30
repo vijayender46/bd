@@ -52,11 +52,10 @@ export default function Header() {
             <img src={logo} alt="Logo" />
             </Link>
           </div>
-        
 
           <div className="headerCart flex">
-            <CurrencyDropdown styles={'md:mr-5 mr-2 font-light text-sm text-light min-w-14'}/>
-            <CartTop />
+            <CurrencyDropdown styles={'md:mr-5 mr-2 font-light text-sm mt-[2px] text-light min-w-14'}/>
+          <CartTop />
           </div>
 
         </div>

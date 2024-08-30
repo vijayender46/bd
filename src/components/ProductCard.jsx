@@ -15,26 +15,28 @@ const ProductCard = ({
   badgeCss 
 }) => {
   return (
-    <div className="product_card group mb-8">
-      <Link to={productLink} className="w-full">
+    <div className="product_card group mb-8 px-3">
+      
         <div className="product_model_img relative overflow-hidden">
           {/* The default image */}
-          <div className="active_img">
-            <img src={defaultImage} alt={title} />
+          <div className="active_img select-none">
+            <img className='pointer-events-none' src={defaultImage} alt={title} />
           </div>
 
           {/* The hover image */}
-          <div className="hover_img absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500">
-            <img src={hoverImage} alt={`${title} Hover`} />
+          <div className="hover_img select-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-500">
+            <img className='pointer-events-none' src={hoverImage} alt={`${title} Hover`} />
           </div>
         </div>
 
         <div className="product_card_info inline-block">
-          <Title titleText={title} titleCss={`text-xl md:text-2xl leading-7 ${titleCss}`} />
-          <h4 className="font-medium md:text-xl text-lg text-gray">{price}</h4>
-          <span className={`inline-block w-[18px] h-[18px] scale-1 hover:scale-110 rounded-full mt-2 ${badgeCss} duration-500`} style={{ backgroundColor: badgeColor }}></span>
+          <Link to={productLink} className="w-full">
+            <Title titleText={title} titleCss={`text-xl md:text-2xl leading-7 ${titleCss}`} />
+            <h4 className="font-medium md:text-xl text-lg text-gray">{price}</h4>
+            <span className={`inline-block w-[18px] h-[18px] scale-1 hover:scale-110 rounded-full mt-2 ${badgeCss} duration-500`} style={{ backgroundColor: badgeColor }}></span>
+          </Link>
         </div>
-      </Link>
+      
     </div>
   );
 };

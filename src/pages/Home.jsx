@@ -28,6 +28,7 @@ import bd_boggles_aqua from '../assets/bd_boggles_aqua.png';
 import bd_boggles_aqua_hover from '../assets/bd_boggles_aqua_hover.png';
 import bd_boggles_grey from '../assets/bd_boggles_grey.png';
 import bd_boggles_grey_hover from '../assets/bd_boggles_grey_hover.png';
+import { useState } from "react";
 
 
 
@@ -101,6 +102,14 @@ const productsData = [
 
 export default function Home() {
 
+  const [hasSwiped, setHasSwiped] = useState(false);
+
+  const handleAfterChange = () => {
+    if (!hasSwiped) {
+      setHasSwiped(true);
+    }
+  };
+
   return (
     <>
       <section 
@@ -143,10 +152,13 @@ export default function Home() {
         />
       </section>
 
-      <section className="container mx-auto">
-        <Title titleCss='w-full text-center md:text-5xl text-3xl font-medium my-8 md:my-12' titleText='Shop by colour' />
+      <Title 
+      titleCss='w-full mx-auto text-center md:text-5xl text-3xl font-medium my-8 md:my-12' 
+      titleText='Shop by colour' />
 
+      <section className={`container-full mx-auto ${hasSwiped ? "swiped" : ""}`}>        
         <CustomCarousel 
+        afterChange={handleAfterChange}
         autoPlay={false} 
         deviceType="desktop"
         showDots={false}

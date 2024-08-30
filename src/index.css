@@ -64,6 +64,16 @@
     transition: all ease 450ms;
 }
 
+/* CSS to create initial offset for the first item */
+.carousel-container .react-multi-carousel-item:first-child {
+  margin-left: 3%; /* Adjust to show part of the second item */
+  transition: transform 0.3s ease;
+}
+
+.carousel-container.swiped .react-multi-carousel-item:first-child {
+  transform: translateX(0); /* Reset the transform once swiped */
+}
+
 
 @media only screen and (max-width:1280px){
   .bd-hero-img {

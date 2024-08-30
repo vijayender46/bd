@@ -6,7 +6,7 @@ import linkedin from '../assets/bd_linkedin.svg'
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-dark text-light py-20">
+    <footer className="w-full bg-dark text-light py-20 px-12 md:px-5 text-center md:text-left">
         <div className="container mx-auto mb-10 border-b border-[#D7D1CB] justify-between flex pb-8">
             <Link to='/'>
                 <img src={logo} alt="Logo" />
@@ -52,14 +52,14 @@ export default function Footer() {
             </div>
         </div>
 
-        <div className="container mx-auto md:flex justify-between md:mt-16 mt-10 border-t border-[#777] md:border-t-0 pt-10">
-            <div className="flex gap-4 text-light">
+        <div className="container mx-auto md:flex justify-between md:mt-16 mt-10 border-t border-[#777] md:border-t-0 pt-10 text-sm md:text-base">
+            <div className="flex gap-4 text-light md:justify-start justify-center">
                 <Link>Privacy Policy</Link>
                 <Link>Cookie Policy</Link>   
                 <Link>Terms and Conditions</Link>
             </div>
-            <div className="text-[#777777]">
-                <p>Bryant Medical Ltd | © All Rights Reserved.</p>
+            <div className="text-[#777777] mt-4 md:mt-0">
+                <p className="tracking-wider">Bryant Medical Ltd | © All Rights Reserved.</p>
             </div>
         </div>
 

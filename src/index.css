@@ -79,4 +79,8 @@
     display: block;
     visibility: visible;
   }
+  .icon {
+    height: 30px;
+    width: 30px;
+  }
 }

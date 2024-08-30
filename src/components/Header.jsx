@@ -55,7 +55,7 @@ export default function Header() {
         
 
           <div className="headerCart flex">
-            <CurrencyDropdown styles={'mr-5 font-light text-sm text-light min-w-14'}/>
+            <CurrencyDropdown styles={'md:mr-5 mr-2 font-light text-sm text-light min-w-14'}/>
             <CartTop />
           </div>
 

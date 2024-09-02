@@ -80,7 +80,7 @@
   }
 
   .bd_look_good {
-    background-position: 20% center !important;
+    background-position: 30% center !important;
   }
 
   .smart_safe_stylist {
@@ -125,6 +125,10 @@
   .smart_safe_stylist:after {
     background:rgba(255, 255, 255, 0.8);
   }
+}
 
-  
+@media only screen and (max-width:640px){
+  .switch-to-polarised {
+    background-position: 50% center !important;
+  }
 }

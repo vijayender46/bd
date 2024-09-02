@@ -221,7 +221,7 @@ export default function Home() {
             <Button buttonClass='bg-light hover:bg-blue text-dark hover:text-light' buttonText='Shop Now' buttonLink='/' />
             </div>
             </div>
-        <div className="flex-1 justify-center text-center box-border px-10">
+        <div className="flex-1 justify-center text-center box-border px-10 md:mb-0 mb-10">
           <div className="inline-block text-center">
             <img src={BD_selfcare_boggles} alt={BD_selfcare_boggles} />
             <Title 

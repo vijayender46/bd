@@ -119,3 +119,36 @@ export const menuItems = [
     { color: '#cccccc', image: '../src/assets/bd_case_clear.png' },
     { color: '#9B8FAB', image: '../src/assets/bd_case_purple.png' },
   ];
+
+  export const ratingData = [
+    {
+        id: 1,
+        star:5,
+        title: 'Highly recommend, the anti fog coating is incredible.',
+        auther: 'Emma Sunderland'
+    },
+    {
+      id: 2,
+      star:5,
+      title: 'Highly recommend, the anti fog coating is incredible.',
+      auther: 'Victoria Martin'
+  },
+  {
+    id: 3,
+    star:5,
+    title: 'Highly recommend, the anti fog coating is incredible.',
+    auther: 'Josh Sharma'
+},
+{
+  id: 4,
+  star:5,
+  title: 'Highly recommend, the anti fog coating is incredible.',
+  auther: 'Jon York'
+},
+{
+  id: 5,
+  star:5,
+  title: 'Highly recommend, the anti fog coating is incredible.',
+  auther: 'Misha Paul'
+}
+  ]

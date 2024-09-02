@@ -74,17 +74,34 @@
   transform: translateX(0); /* Reset the transform once swiped */
 }
 
-
 @media only screen and (max-width:1280px){
   .bd-hero-img {
     background-size:60%;
   }
+
+  .bd_look_good {
+    background-position: 20% center !important;
+  }
+
+  .smart_safe_stylist {
+    background-position: -100px center !important;
+  }
+}
+
+@media only screen and (max-width:960px){
+  .smart_safe_stylist {
+    background-position: -200px center !important;
+  }
 }
 
 @media only screen and (max-width:767px){
-  .bd-hero-img {
+  .bd-hero-img{
     background-image:none !important;
   }
+  .smart_safe_stylist {
+    background-position: center center !important;
+  }
+
   .bd-hero-img .imageSection {
     display: block;
     visibility: visible;
@@ -96,4 +113,18 @@
   .carousel-container .react-multi-carousel-item:first-child {
     margin-left:inherit;
   }
+  .switch-to-polarised:after, .smart_safe_stylist:after{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(227, 229, 239, 0.8);
+    content:'';
+  }
+  .smart_safe_stylist:after {
+    background:rgba(255, 255, 255, 0.8);
+  }
+
+  
 }

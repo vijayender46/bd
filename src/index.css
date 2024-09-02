@@ -86,11 +86,17 @@
   .smart_safe_stylist {
     background-position: -100px center !important;
   }
+  .switch-to-polarised {
+    background-position: 50% center !important;
+  }
 }
 
 @media only screen and (max-width:960px){
   .smart_safe_stylist {
     background-position: -200px center !important;
+  }
+  .switch-to-polarised {
+    background-position: 40% center !important;
   }
 }
 

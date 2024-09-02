@@ -327,7 +327,7 @@ export default function Home() {
           {/* Text Section */}
           <TextSection
             widthCss="flex justify-items-center items-center max-w-md box-border text-center md:text-left p-8 sm:p-0 sm:py-10"
-            titleFont="inline-block md:text-5xl text-3xl font-medium max-w-sm leading-[60px]" 
+            titleFont="inline-block md:text-5xl text-3xl font-medium max-w-sm leading-[40px] md:leading-[60px]" 
             subTitleFont="md:text-2xl text-xl font-medium text-gray my-2 md:my-4  md:pr-[80px] tracking-wide"
             title="Great clinicians have vision."
             subtitle="Boggles take care of your eyes, so your vision can change the world."
